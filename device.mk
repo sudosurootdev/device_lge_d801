@@ -14,17 +14,15 @@
 # limitations under the License.
 #
 
-$(call inherit-product-if-exists, vendor/lge/d800/d800-vendor.mk)
+$(call inherit-product-if-exists, vendor/lge/d801/d801-vendor.mk)
 $(call inherit-product, device/lge/g2-common/g2.mk)
 
 ## overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
 PRODUCT_PROPERTY_OVERRIDES += \
-        telephony.lteOnCdmaDevice=0 \
-        telephony.lteOnGsmDevice=1 \
-        ro.telephony.default_network=9 \
-        ro.ril.def.preferred.network=9
+	telephony.lteOnGsmDevice=1 \
+	ro.telephony.default_network=9
 
 PRODUCT_COPY_FILES += \
 	frameworks/native/data/etc/android.hardware.telephony.gsm.xml:system/etc/permissions/android.hardware.telephony.gsm.xml
