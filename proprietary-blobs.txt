@@ -67,6 +67,7 @@ vendor/lib/egl/libEGL_adreno.so
 vendor/lib/egl/libGLESv1_CM_adreno.so
 vendor/lib/egl/libGLESv2_adreno.so
 vendor/lib/egl/libq3dtools_adreno.so
+vendor/lib/egl/libplayback_adreno.so
 vendor/lib/hw/power.msm8974.so
 vendor/lib/hw/sensors.msm8974.so
 vendor/lib/libacdbmapper.so
